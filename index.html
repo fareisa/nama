@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>munkin tugas?</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>selamat datang di web<br />tjkt wikrama</header>
+      <nav>
+        <table>
+          <tr>
+            <th>Nama</th>
+            <td>Faris Mujibur Rahman</td>
+          </tr>
+          <tr>
+            <th>NIS</th>
+            <td>12209002</td>
+          </tr>
+          <tr>
+            <th>Rombel</th>
+            <td>TJKT XI-2</td>
+          </tr>
+          <tr>
+            <th>Rayon</th>
+            <td>Cicurug 7</td>
+          </tr>
+        </table>
+      </nav>
+      <aside>
+        <a href="javascript:alert('tugas kontol')">
+          <img src="bocc.jpg" alt="bocchi" />
+        </a>
+      </aside>
+    </div>
+  </body>
+</html>
+<style>
+  body,
+  html {
+    background-color: #c6ebe5;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  .container {
+    width: 1200px;
+    margin: 70px auto;
+    padding: 0px;
+    display: grid;
+    grid-template-areas:
+      "header aside"
+      "nav aside";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
+  }
+
+  header {
+    grid-area: header;
+    color: #292e30;
+    font-family: "comic sans ms";
+    font-weight: bold;
+    font-size: 50px;
+    padding: 0px 0;
+  }
+
+  nav {
+    grid-area: nav;
+    color: #163742;
+    font-family: "comic sans ms";
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px 0;
+  }
+
+  th {
+    width: 105px;
+  }
+
+  aside {
+    grid-area: aside;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  img {
+    width: 400px;
+  }
+</style>
